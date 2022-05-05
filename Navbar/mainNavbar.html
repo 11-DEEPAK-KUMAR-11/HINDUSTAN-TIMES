@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindustan Times</title>
+    
+    <style></style>
+    <link rel="stylesheet" href="mainNavbar.css">
+</head>
+<body>
+    <div id="contain">
+        <div class="box" id="explore">
+           <div style="display: flex;justify-content:space-around;"><a href="" style="text-decoration: none;color: white"><h2>🚀Explore</h2></a> 
+            <a href="" style="text-decoration: none;color: white"><h2>🔍Search</h2></a></div>
+            <div style="display: block;margin-left: 53px;margin-top: 23px;"><h3>Tuesday, May 08, 2022 |
+                 New Delhi 37°C ⛅</h3></div>
+        </div>
+        <div class="box">
+            <img src="https://accounts.hindustantimes.com/images/ht/logos/ht-logo2.svg" alt="">
+        
+        </div>
+        <div class="box">
+            <div class="log">
+                <a href="" style="text-decoration: none;color: white"><h3>🎮Games</h3></a>
+                <a href="" style="text-decoration: none;color: white"><h3>📰E-Paper</h3></a>
+                <a href="" style="text-decoration: none;color: white"><h3>👤Sign in</h3></a>
+            </div>
+            <div id="sub">
+                <div><p id="trialdays" style="margin-left: 50px;">Start 15 Days Free Trial</p>
+                    <button id="btnsub">Subscribe</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var changesub=localStorage.getItem("done")||null;
+    document.querySelector("#sub button").addEventListener("click",subscribe)
+    function subscribe(){
+        window.location.href="subscribe.html"
+    }
+
+    if(changesub!==null){
+      document.querySelector("#btnsub").innerText="Subscribed";
+      document.querySelector("#trialdays").innerText="";
+    }
+    else{
+        document.querySelector("#btnsub").innerText="Subscribe";
+    }
+</script>
