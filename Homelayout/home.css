@@ -66,7 +66,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #divinsidediv{
-  width: 65%; height: 180px;   border-radius: 5px;  font-family: sans-serif;
+  width: 65%; height: auto;   border-radius: 5px;  font-family: sans-serif;
 }
 
 #divinsidedivtwo{
@@ -84,6 +84,45 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #divinsidedivtwo>img{
    width: 100%; border-radius: 5px;
+}
+#button{
+  margin: auto;
+  text-align: center;
+}
+#button>a{
+  height: 40px;
+  width:100px ;
+  background: #00b1cd;
+}
+#button button{
+border-radius: 5px;
+width:200px;
+height:40px;
+  display: inline-block;
+    background: #00b1cd;
+    color: #fff;
+   border-color: none;
+    font-weight: 900;
+    line-height: 40px;
+    font-family: "Lato",sans-serif;
+}
+#advertise{
+  height:400px;
+  width:90%;
+  align-items: center;
+ background-color : #e5e5e5;
+  margin: auto;
+  margin-top: -20px;
+}
+#advertise>p{
+  text-align: center;
+    font-weight: lighter;
+    font-size: large;
+    color: gray;
+    font-family: sans-serif
+}
+#advertise>img{
+  width: 95%;  border-radius: 5px;margin-left: 15px; 
 }
 
 #third_one>p{
@@ -127,3 +166,73 @@ width: 100%;
 span{
   color: #00b1cd;
 }
+
+#footer{
+  height:500px;
+  width:100%;
+  background-color: #011e29;
+  
+}
+#footercontainer{
+  width:80%;
+  margin: auto;
+ 
+  padding-top: 10px ;
+  font-family:sans-serif ;
+  
+}
+.footerdivone{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.logo{
+  width:40%;
+}
+#footercontainer>p{
+  color: white;
+  font-weight: 700;
+}
+.footerdivtwo{
+  width:100%;
+  height: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+.card2{
+  width:60%;
+  
+}
+
+.ht{
+  height:40px;
+  font-weight: 700;
+  padding-right: 60px;
+ 
+
+ 
+}
+.email{
+  height: 40px;
+  padding-right: 100px;
+  margin-right: 5px;
+ 
+}
+.btn{
+  height: 40px;
+  background-color: #011e29;
+border:1px solid white;
+  color: #fff;
+  border-radius: 5px;
+  padding:0px 20px 0px 20px;
+  font-weight: 700;
+}
+.socialmedialogo{
+  width:25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
