@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindustan Times</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div>
+                <div class="exploreSearch">
+                    <div class="btnExplore">
+                        <span class="navIco"></span>
+                        <strong>Explore</strong>
+                    </div>
+                    <div class="searchLink">
+                        <a href="">Search</a>
+                    </div>
+                </div>
+
+                <div class="date-weather">
+                    <div class="hDate">
+                        Thursday, May 05, 2022
+                    </div>
+
+
+                    <div class="hWeather">
+                        New Delhi
+                        <span class="cTemp">32</span>
+                        <sup>o</sup>
+                        C
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <h1>
+                    <a href="">
+                        <img src="https://www.hindustantimes.com/res/images/ht-logo.svg" alt="">
+                    </a>
+                </h1>
+            </div>
+
+            <div class="rgtLinks">
+                <div class="links">
+                    <div class="gamezop">
+                        <a href="">Games</a>
+                    </div>
+                    <div class="epaper">
+                        <a href="">E-paper</a>
+                    </div>
+                    <div class="signin">
+                        <div class="login">
+                            <div class="sign-in">
+                                Sign-in
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="hdrSubscribe">
+                    <div>
+                        <span class="headSpanTxt">Start 15 Days Free Trial</span>
+                    </div>
+                    <div class="subcBtn">
+                        <a href="">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
+<script>
+    var changesub=localStorage.getItem("done")||null;
+    document.querySelector("#sub button").addEventListener("click",subscribe)
+    function subscribe(){
+        window.location.href="subscribe.html"
+    }
+
+    if(changesub!==null){
+      document.querySelector("#btnsub").innerText="Subscribed";
+      document.querySelector("#trialdays").innerText="";
+    }
+    else{
+        document.querySelector("#btnsub").innerText="Subscribe";
+    }
+</script>
