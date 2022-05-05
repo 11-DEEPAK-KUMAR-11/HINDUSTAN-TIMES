@@ -1,4 +1,5 @@
 #container{
+    /* margin-top: 50px; */
     width:100%; 
     display:flex; 
     /* border:1px solid red; */
@@ -57,11 +58,24 @@ a{
     padding:10px 0px 10px 0px;
 }
 #box2 div{
-    border:1px solid blue;
-    width:10%;
+    border:0.5px solid rgb(197, 197, 206);
+    width:9%;
     display:flex;
     justify-content: center;
     align-items: center;
     border-radius: 35px;
     cursor: pointer;
 }
+#box2 div:hover{
+    border:1px solid #00B1CD;
+    background-color:rgba(0,0,0,0);
+    text-transform: capitalize;
+    text-shadow: rgb(65, 168, 133);
+    text-decoration-color: #00B1CD;
+}
+#box2 p{
+    font-size: 14px;
+    font-family: sans-serif;
+    color:#000000;
+}
+
