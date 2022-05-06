@@ -310,23 +310,26 @@
                         <a href="">Games</a>
                     </div>
                     <div class="epaper">
-                        <a href="">E-paper</a>
+                        <a id="papere" style="cursor: pointer;">E-Paper</a>
                     </div>
-                    <div class="signin">
+                    <a href="signup.html" style="text-decoration: none;color: white;margin-left: 5px;margin-top: 1px;">
+                        <h3 id="signuser">Sign in</h3>              
+                    </a>
+                    <div id="out" class="signin">
                         <div class="login">
                             <div class="sign-in">
-                                Sign-in
+                                Sign-out
                             </div>
                         </div>
                     </div>  
                 </div>
 
-                <div class="hdrSubscribe">
+                <div id="sub" class="hdrSubscribe">
                     <div>
-                        <span class="headSpanTxt">Start 15 Days Free Trial</span>
+                        <span id="trialdays" class="headSpanTxt">Start 15 Days Free Trial</span>
                     </div>
                     <div class="subcBtn">
-                        <a href="">Subscribe</a>
+                        <a id="btnsub" href="subscribe.html">Subscribe</a>
                     </div>
                 </div>
             </div>
@@ -335,18 +338,59 @@
 </body>
 </html>
 <script>
-    var changesub=localStorage.getItem("done")||null;
-    document.querySelector("#sub button").addEventListener("click",subscribe)
-    function subscribe(){
-        window.location.href="subscribe.html"
+ //subscribe
+ var changesub = localStorage.getItem("done") || null;
+    document.querySelector("#sub a").addEventListener("click", subscribe)
+    function subscribe() {
+        window.location.href = "subscribe.html"
+
     }
 
-    if(changesub!==null){
-      document.querySelector("#btnsub").innerText="Subscribed";
-      document.querySelector("#trialdays").innerText="";
+    if (changesub !== null) {
+        document.querySelector("#btnsub").innerText = "Subscribed";
+        document.querySelector("#trialdays").innerText = "";
+
     }
-    else{
-        document.querySelector("#btnsub").innerText="Subscribe";
+    else {
+        document.querySelector("#btnsub").innerText = "Subscribe";
+    }
+
+    //login
+
+    var userData = localStorage.getItem("userName") || null;
+
+    if (userData !== null) {
+        document.querySelector("#signuser").innerText = userData;
+    }
+
+    else {
+        document.querySelector("#signuser").innerText = "Sign in";
+    }
+
+
+    //log out 
+    document.querySelector("#out").addEventListener("click", out)
+    function out() {
+        localStorage.clear(changesub);
+        window.location.reload();
+
+    }
+    //for e-paper
+
+    
+    document.querySelector("#papere").addEventListener("click", gotoPaper);
+//    console.log(changesub);
+    function gotoPaper() {
+        var changepaper = localStorage.getItem("all done") || null;
+        console.log(changepaper);
+        if (changepaper !== null) {
+            window.location.href="epaper.html";
+
+        }
+        else {
+               localStorage.removeItem("all done");
+            window.location.href="navbar.html";
+        }
     }
     function openNav() {
   document.getElementById("mySidenav").style.width = "350px";
