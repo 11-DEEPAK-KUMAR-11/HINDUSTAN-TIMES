@@ -149,9 +149,10 @@
      document.querySelector("#paybtn").addEventListener("click",payDone)
 
      function payDone(){
-        //  if(input.length<1){
+        //  if(input.value.length<1){
         //      alert("please fill the Data");
         //  }
+        //payment process
         const body_otp = Number(prompt("Please Enter OTP "));
         console.log(body_otp);
          alert("Congratulations ! You got Trials For 14 Days. Enjoy Our Services.Thank You!");
@@ -159,5 +160,8 @@
 
         var purpose="Payment Done";
         localStorage.setItem("done",purpose);
+
+        var method="Payment is all Done";
+        localStorage.setItem("all done",method);
      }
 </script>
