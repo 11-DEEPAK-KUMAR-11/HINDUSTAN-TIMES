@@ -1,5 +1,5 @@
 #container{
-    /* margin-top: 50px; */
+  
     width:100%; 
     display:flex; 
     /* border:1px solid red; */
@@ -8,8 +8,10 @@
     margin:auto;
     background-color: white;
     padding-bottom: 4px;
-    border: 0.5px solid rgb(101, 99, 99)
+    /* border: 0.5px solid rgb(101, 99, 99); */
     box-shadow:rgba(0, 0, 0, 0.16) 0px 1px 4px; 
+    /* margin-top: 20px; */
+    padding-top: 20px;
 } 
 #box1{
     /* border:1px solid green; */
@@ -45,6 +47,8 @@ a{
     justify-content: space-evenly;
     margin:auto;
     background-color: white;  
+    /* margin-top: -20px; */
+    margin-bottom: 20px;
 }
 #box2{
     /* border:1px solid green; */

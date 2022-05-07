@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        *{
+            margin: 50px;
+            padding: 0px;
+        }
+        #pay{
+            border: 2px solid blue;
+            width: 50%;
+            height: auto;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 20px;
+           
+        }
+        #pay>h1{
+            
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        #paybox{
+            width: 50%;
+            height: 40px;
+            margin: auto;
+            /* border: 1px solid green; */
+            margin-bottom: 40px;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding:20px 0px 0px 15px
+            
+        }
+
+        #selectPay{
+            display: block;
+            margin-top: 50px;
+            height: 40px;
+            width: 30%;
+            margin: auto;
+            border: 2px solid blue;
+            border-radius: 10px;
+            margin-bottom: 40px;
+
+        }
+
+        #paynow{
+            width: 30%;
+            height: 40px;
+            display: block;
+            margin: auto;
+            border:none;
+            color: white;
+            border-radius: 10px;
+            background-color: blue;
+            margin-bottom: 40px;
+            
+        }
+        #paynow:hover{
+            background-color: rgb(76, 76, 167);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="pay">
+        <h1>Payble Amount</h1>
+        <div id="paybox">
+
+        </div>
+        <select name="" id="selectPay">
+            <option value="">Net Banking</option>
+            <option value="">SBI Debit/Credit Card</option>
+            <option value="">UPI</option>
+            <option value="">Other Bank Debit card</option>
+        </select>
+        <button id="paynow">Pay Now</button>
+    </div>
+</body>
+</html>
+
+<script>
+    var valueAmount=localStorage.getItem("amount");
+    console.log(valueAmount);
+    document.querySelector("#paybox").append(valueAmount);
+
+    document.querySelector("#paynow").addEventListener("click",paymentDone);
+
+    function paymentDone(){
+        
+        window.location.href="gateway.html"
+        localStorage.setItem("actualam",valueAmount)
+    }
+
+    
+</script>

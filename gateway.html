@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <style>
+        #tiffin {
+            /* border: 2px solid blue; */
+            width: 60%;
+            height: auto;
+            margin: auto;
+            padding-bottom: 50px;
+            padding-top: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+        }
+
+        #heade {
+            width: 40%;
+            height: auto;
+            /* border: 1px solid gray; */
+            margin: auto;
+            color: blue;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        #actual {
+            width: 100%;
+            height: 40px;
+            /* border: 1px solid black; */
+            padding-top: 10px;
+            /* padding-left: 1px; */
+            margin-top: 20px;
+            background-color: rgb(158, 154, 154);
+            color: black;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        #forms {
+            /* border: 1px solid red; */
+            width: 60%;
+            margin: auto;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+
+        }
+
+        .init {
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+
+        }
+
+        #paybtn{
+             display: block;
+             margin: auto;
+             margin-top: 50px;
+             width: 20%;
+             height: 35px;
+             background-color: blue;
+             color: white;
+             border-radius: 20px;
+             border: none;
+        }
+
+        #paybtn:hover{
+            background-color: rgb(76, 76, 167);
+        }
+
+        /* .userdetails{
+            display: block;
+            margin: auto;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="tiffin">
+        <div id="heade">
+            <h1>Payment Gateway</h1>
+        </div>
+        <div id="actual">TOTAL AMOUNT INR : <h3 id="paisa" style="display:inline;"></h3>
+        </div>
+        <div id="forms">
+            <form id="userho">
+                <div class="init"> <label for="">Card Number : </label>
+                    <input type="number" class="userdetails" required>
+                </div>
+
+                <div class="init"> <label for="">User Name on Card : </label>
+                    <input type="text" class="userdetails" required>
+                </div>
+
+                <div class="init"> <label for="">Card CVV : </label>
+                    <input type="number" class="userdetails" required>
+                </div>
+
+                <div class="init"> <label for="">Card Expiry : </label>
+                   <div> <select name="" id="seldate">
+                    <option value="">Month</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                </select>
+                <select name="" id="selyear">
+                    <option value="">Year</option>
+                    <option value="">2022</option>
+                    <option value="">2023</option>
+                    <option value="">2024</option>
+                    <option value="">2025</option>
+                </select></div>
+                </div>
+            </form>
+        </div>
+        <button id="paybtn">PAY</button>
+    </div>
+</body>
+
+</html>
+<script>
+     var payValueAmount=localStorage.getItem("actualam");
+     console.log(payValueAmount);
+
+     document.querySelector("#paisa").append(payValueAmount);
+
+     document.querySelector("#paybtn").addEventListener("click",payDone)
+
+     function payDone(){
+        //  if(input.value.length<1){
+        //      alert("please fill the Data");
+        //  }
+        //payment process
+        const body_otp = Number(prompt("Please Enter OTP "));
+        console.log(body_otp);
+         alert("Congratulations ! You got Trials For 14 Days. Enjoy Our Services.Thank You!");
+        window.location.href="home.html";
+
+        var purpose="Payment Done";
+        localStorage.setItem("done",purpose);
+
+        var method="Payment is all Done";
+        localStorage.setItem("all done",method);
+     }
+</script>

@@ -1,0 +1,224 @@
+#footer{
+    padding-top: 10px;
+    height:auto;
+    width:100%;
+    background-color: #011e29;
+    
+  }
+  #footercontainer{
+    width:80%;
+    margin: auto;
+    padding-top: 10px ;
+    font-family:sans-serif ;
+    
+  }
+  .footerdivone{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo{
+    width:40%;
+  }
+  #footercontainer>p{
+    color: white;
+    font-weight: 700;
+  }
+  .footerdivtwo{
+    width:100%;
+    height: auto;
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  .card2{
+    width:60%;
+    margin-bottom: 30px;
+  }
+  
+  .ht{
+    height:34px;
+    font-weight: 700;
+    padding-right: 60px;
+  }
+  .email{
+    height: 29px;
+    padding-right: 100px;
+    margin-right: 5px;
+   
+  }
+  .btn{
+    height: 34px;
+    background-color: #011e29;
+  border:1px solid white;
+    color: #fff;
+    border-radius: 5px;
+    padding:0px 20px 0px 20px;
+    font-weight: 700;
+  }
+  .socialmedialogo{
+    width:25%;
+    display: flex;
+    justify-content: space-between;
+  }
+  *{
+    margin: 0px;
+    padding: 0px;
+}
+#footerCon{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    /* margin-top:80px; */
+    background-color: #011e29;
+}
+
+.col p{
+    color: white;
+    line-height:30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size:14px;
+    /* margin-top:10px; */
+}
+#firstCon{
+    width: 75%;
+    padding-top: 20px;
+    height:auto;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    
+    /* border: 1px solid yellow; */
+    margin: auto;
+}
+
+.col a{
+    text-decoration: none;
+    
+}
+
+ul{
+    list-style-type: none;
+   
+}
+ul>li{
+  
+    line-height: 30px;
+}
+ul>li>a{
+    /* color: white; */
+    /* line-height: 30px; */
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+#Entert{
+    margin-top:13px;
+}
+#Astro{
+    margin-top:10px;
+}
+
+#Lifest{
+    margin-top:25px;
+}
+#sport{
+    margin-top:15px;  
+}
+#books{
+    margin-top:15px;
+}
+#aarif{
+    margin-top:-10px;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+#khan{
+    margin-top:-10px;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+#secondCon{
+    width:100%;
+    height:200px;
+    /* border: 1px solid green; */
+    margin: auto;
+}
+#secondCon{
+    background-color: #00131a
+}
+#info{
+    width:75%;
+    height:80px;
+    margin: auto;
+    padding-top: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    
+}
+#info>div>a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#info{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,15px);
+    gap:30px;
+
+}
+
+#footerLogo{
+    width:75%;
+    height:60px;
+    margin: auto;
+    border: 1px 0px 1px 0px;
+    border-bottom: 1px solid rgb(90, 88, 88);
+    border-top: 1px solid rgb(90, 88, 88);
+}
+#footerLogo{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows:50px;
+    gap:48px;
+}
+
+#footerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top:20px 0px 20px 0px; */
+    /* height: auto; */
+}
+
+#footerLogo>div:nth-child(7)>img{
+    width:95px;
+ }
+ 
+#footerLogo>div:nth-child(8)>img{
+   width:70px;
+}
+#footerLogo>div:nth-child(9)>img{
+    width:45px;
+ }
+#footerLogo>div:nth-child(10)>img{
+    width:70px;
+ }
+/* hr{
+    width:75%;
+    margin: auto;
+    height: 0px;
+    background-color: blue;
+} */
+#bottom{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.753);
+    margin-top: 10px;
+}

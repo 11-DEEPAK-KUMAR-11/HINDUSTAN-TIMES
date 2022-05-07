@@ -1,0 +1,169 @@
+#cont{
+    width: 80%; height: auto; margin: auto; margin-top: 20px;
+    display: flex;justify-content: space-between;
+}
+#first{
+     width: 20%; height: 1120px; box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+#first>h3>#thelinesone{
+   color: black;
+}
+#newsplace>a{
+    padding-right: 20px; text-decoration: none; color: #00b1cd;
+}
+#newsplace1>a{
+     text-decoration: none; color: #00b1cd;
+}
+#second{
+     width: 60%; height: auto; 
+}
+
+#third{
+     width: 30%; height: 1190px;  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+#cont>#first>h3{
+   text-align: center; 
+}
+#firstOne>h3{
+  text-align: center; font-family: sans-serif;
+}
+#latestnews_section{
+    padding-left: 10px; font-family: sans-serif;
+}
+#recommended_news{
+  padding-left: 10px; font-family: sans-serif;
+}
+hr+h3>a{
+  color: #00b1cd; text-decoration: none; font-family: sans-serif;
+}
+h4+p{
+    padding-left: 10px; font-weight: lighter; font-size: large; color: gray;  font-family: sans-serif;
+}
+#second>p{
+    padding-left: 25px; font-family: sans-serif; 
+}
+#second>P>a{
+    text-decoration: none;  color: #00b1cd; 
+}
+#slash{
+    color: gray; padding-left: 5px;
+}
+#second>h2{
+    text-align:center; 
+}
+#second_one{
+   width: 90%; height:500px; margin: auto;  border-radius: 5px; 
+}
+#second_one:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#second_one>h3{
+  padding-left: 10px; color: #00b1cd;  font-family: sans-serif;
+}
+#second_one>h3>a{
+  text-decoration: none;  color: #00b1cd; 
+}
+#second_one>h3+h2{
+   padding-left: 10px;  font-family: sans-serif;
+}
+#second_one>img{
+   width: 95%;  border-radius: 5px;margin-left: 15px; 
+}
+#second_one>p{
+   padding-left: 10px; font-weight: lighter; font-size: large; color: gray;  font-family: sans-serif;
+}
+p>svg{
+   padding-left: 250px; font-size: 30px; 
+}
+#second_two{
+  width: 90%; height: 200px;  margin: auto; display: flex; justify-content: space-evenly;
+  border-radius: 5px; align-items: center;
+}
+#second_two:hover{
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#divinsidediv{
+  width: 65%; height: 180px;   border-radius: 5px;  font-family: sans-serif;
+}
+
+#divinsidedivtwo{
+  width: 30%; height: 170px; border-radius: 5px;  font-family: sans-serif;
+}
+
+#divinsidediv>h3{
+  padding-left: 10px; color: #00b1cd;  font-family: sans-serif;
+}
+#divinsidediv>h3>a{
+  text-decoration: none;  color: #00b1cd;  font-family: sans-serif;
+} 
+#divinsidediv>h4{
+   padding-left: 10px;  font-family: sans-serif;
+}
+#divinsidedivtwo>img{
+   width: 100%; border-radius: 5px;
+}
+
+#third_one>p{
+   text-align: center; font-weight: lighter; font-size: large; color: gray;  font-family: sans-serif;
+}
+#thirdclone_one>p{
+  text-align: center; font-weight: lighter; font-size: large; color: gray; 
+}
+#third_one>img{
+  width: 100%;
+}
+#thirdclone_one>img{
+width: 100%; 
+}
+#third_two{
+   width:100%;  height: 300px; position:relative;
+}
+#third_two>h3{
+ text-align: center; 
+}
+#third_two>h4{
+   padding-left: 10px;  font-family: sans-serif;
+}
+#third_two>img{
+   width: 100%;
+}
+#fourdivs{
+  height: 100px; width: 100%;  align-items: center;display: flex; justify-content: space-evenly; align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+#twodiv{
+   width: 60%; height: 90px; padding-left: 10px; padding-bottom: 15px;  font-family: sans-serif;
+}
+#twodivs{
+   width: 30%; height: 90px;  font-family: sans-serif;
+}
+
+#twodivs>img{
+   width: 100%; height: 90px; border-radius: 5px;
+}
+
+#viewallOpt{
+    text-align: center; color: #00b1cd;
+}
+span{
+  color: #00b1cd;
+}
+#viewallOpt{
+   font-family: sans-serif;
+}
+#advertisement{
+width: 90%; height: 450px; margin: auto; background-color: #e5e5e5;;
+ display: flex; justify-content: center;
+   align-items: center;
+}
+#firstadvertisement{
+    width: 60%; height: 350px;
+}
+#firstadvertisement>p{
+  font-weight: lighter; font-size: large; color: gray;  font-family: sans-serif; text-align: center; 
+}
+#firstadvertisement>img{
+   width: 100%;
+}
+
