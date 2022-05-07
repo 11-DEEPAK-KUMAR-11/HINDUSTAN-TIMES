@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+}
+
+.header {
+    position: static;
+    top: 0px;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 13%);
+    width: 100%;
+    text-align: center;
+    z-index: 9;
+    margin-bottom: 15px;
+}
+.header>div>a>img
+{
+    width: 280px;
+}
+.title {
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0 22px;
+}
+
+.container {
+    box-sizing: unset;
+    width: 450px;
+    margin: 0 auto 40px;
+    padding: 40px;
+    background: #fff;
+    border: solid 1px #e0e0e0;
+    position: relative;
+}
+
+a.icgl {
+    background: url(https://accounts.hindustantimes.com/images/icgl.svg) no-repeat 138px center #eee;
+    border-radius: 2px;
+    padding-left: 170px;
+    line-height: 44px;
+    display: block;
+    margin: 0 0 16px;
+    width: 100%;
+    height: 44px;
+    color: #212121 !important;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a.icfb {
+    background: url(https://accounts.hindustantimes.com/images/icfb.svg) no-repeat 138px center #1877f2;
+    border-radius: 2px;
+    padding-left: 170px;
+    line-height: 44px;
+    display: block;
+    margin: 0 0 16px;
+    width: 100%;
+    height: 44px;
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a.icap {
+    background: url(https://images.livemint.com/sso/appleid_iconlogo.png) no-repeat 138px center #000;
+    border-radius: 2px;
+    padding-left: 170px;
+    line-height: 44px;
+    display: block;
+    margin: 0 0 16px;
+    width: 100%;
+    height: 44px;
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    background-size: 21px 21px;
+}
+
+a.ictc {
+    background: url(https://images.livemint.com/dev/ico_tc.svg) no-repeat 138px center #0087FE;
+    border-radius: 2px;
+    padding-left: 170px;
+    line-height: 44px;
+    display: block;
+    margin: 0 0 16px;
+    width: 100%;
+    height: 44px;
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.or {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    background: #fff;
+    padding: 0 10px;
+    font-weight: 700;
+    color: #757575;
+    margin: 5px 0 20px;
+}
+
+.or span {
+    background: #fff;
+    padding: 0 10px;
+    position: relative;
+}
+
+.inputSec {
+    margin-bottom: 16px;
+}
+
+.label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.inputHolder {
+    position: relative;
+}
+
+.inputHolder input {
+    width: 100%;
+    font-size: 16px;
+    padding: 14px;
+    color: #424242;
+    border: solid 1px #e0e0e0;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.or::before {
+    content: " ";
+    position: absolute;
+    top: 9px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background: #dbdbdb;
+}
+
+.required {
+    color: red;
+}
+
+.btnHolder {
+    text-align: center;
+    padding-top: 24px;
+}
+
+.formHolder .btn {
+    text-align: center;
+    background: #f99d1c;
+    border: 1px solid #f99d1c;
+    color: #fff;
+    margin: 20px 20px 0 0;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 24px;
+    padding: 16px 50px;
+}
+
+.footer {
+    text-align: center;
+    color: #212121;
+    font-size: 16px;
+    margin-top: 100px;
+}
+
+.fs14 {
+    font-size: 14px;
+} 

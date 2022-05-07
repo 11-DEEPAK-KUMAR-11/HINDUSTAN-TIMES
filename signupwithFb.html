@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login With Facebook</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #fbbox {
+            width: 100%;
+            display: flex;
+            height: 62px;
+            color: white;
+            font-family: sans-serif;
+            background-color: rgb(18, 51, 121);
+            padding-left: 20px;
+        }
+
+        #fbbox>img {
+            width: 6%;
+        }
+
+        #tex {
+            height: 40px;
+            width: 100%;
+            /* border: 1px solid red; */
+            font-family: sans-serif;
+            margin-top: 40px;
+            padding-top: 10px;
+            padding-left: 60px;
+        }
+
+        #aakhirilogin {
+            width: 50%;
+            margin: auto;
+            margin-top: 60px;
+        }
+
+        #loguser {
+            width: 80%;
+            margin: auto;
+            height: 200px;
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            line-height: 40px;
+            /* border: 1px solid green; */
+
+            font-family: sans-serif;
+        }
+
+        .lelo{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+
+        }
+
+        .popo{
+            width: 43%;
+            height: 25px;
+            border-radius: 4px;
+            padding-left: 10px;
+        }
+
+        .popo:hover{
+            border: 3px solid black;
+        }
+
+        #inlog{
+            width: 6%;
+            height: 30px;
+            display: block;
+            margin: auto;
+            background-color: rgb(18, 51, 121);
+            color: white;
+            border: none;
+            border-radius: 3px;
+        }
+
+        #inlog:hover{
+            cursor: pointer;
+            background-color: rgb(68, 68, 197);
+        }
+
+        #forgot{
+            text-align: center;
+            font-family: sans-serif;
+            color: blue;
+            line-height: 50px;
+        }
+
+        #createnew{
+            width: 15%;
+            height: 30px;
+            display: block;
+            margin: auto;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 3px;
+
+        }
+
+        #createnew:hover{
+            background-color: rgb(72, 168, 72);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fbbox">
+        <img src="https://1000logos.net/wp-content/uploads/2016/11/facebook-emblem.jpg" alt="">
+        <h2 style="margin-top: 15px;">Facebook</h2>
+
+    </div>
+
+    <div id="tex">
+        <p>Log in to use your Facebook account with <span style="font-weight: bold;">HT Group.</span></p>
+    </div>
+
+    <div id="aakhirilogin">
+        <form action="" id="loguser">
+            <div class="lelo"> <label for="">E-mail address or phone number : </label>
+                <input type="text" class="popo" value="">
+            </div>
+
+            <div class="lelo"> <label for="">Password  : </label>
+                <input type="password" class="popo" required>
+            </div>
+        </form>
+    </div>
+    <button id="inlog">Log In</button>
+    <p id="forgot">Forgotten account?</p>
+    <button id="createnew">Create New Account</button>
+</body>
+
+</html>
+
+<script>
+    document.querySelector("#createnew").addEventListener("click",create);
+    function create(){
+        window.location.href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C589460569891%7Ce%7Cfb%20sign%20in%7C&placement=&creative=589460569891&keyword=fb%20sign%20in&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696221832%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-298448022436%26loc_physical_ms%3D9300787%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw682TBhATEiwA9crl39Gar6nCl8PcrJ694fWENSimM-LG19lNdOopgqLOpJJuu6PTRZOoJhoCM1YQAvD_BwE"
+    };
+
+    document.querySelector("#inlog").addEventListener("click",login)
+    function login(){
+        alert("Login Successful !");
+        window.location.href="home.html";
+        var name=document.querySelector(".popo").value;
+        // var name="Rishabh";
+        localStorage.setItem("userName",name);
+    }
+</script>

@@ -1,0 +1,200 @@
+#cont{
+    width: 80%; height: auto; margin: auto; display: flex;justify-content: space-between;
+}
+#first{
+     width: 20%; height: auto; box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+#first>h3>#thelinesone{
+   color: black;
+}
+#newsplace>a{
+    padding-right: 20px; text-decoration: none; color: #00b1cd;
+}
+#newsplace1>a{
+     text-decoration: none; color: #00b1cd;
+}
+#second{
+     width: 60%; height: auto;
+}
+
+#second>p{
+    padding-left: 25px; font-family: sans-serif; 
+}
+#second>P>a{
+    text-decoration: none;  color: #00b1cd; 
+}
+#slash{
+    color: gray; padding-left: 5px;
+}
+#para{
+    width: 95%; height: 250px; margin: auto;
+}
+#para>p{
+    font-family: sans-serif; padding-left: 10px; color: gray; line-height: 25px;
+}
+#threegames{
+    width: 95%; height: 260px; margin: auto; display: flex; justify-content: space-evenly;
+}
+#firstgame{
+    width: 31.6%; height: 260px; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+#gameimg{
+    width: 100%; height: 100px; 
+}
+#gameimg>img{
+    width: 100%; border-top-left-radius: 5px; border-top-right-radius: 5px;
+}
+#gameimg+h4{
+    padding-left: 15px; font-family: sans-serif; 
+}
+#gameimg+h4+p>a{
+    text-decoration: none; color: gray; font-size: 15px; 
+}
+#threegames+br+hr{
+  width: 95%;
+}
+
+#onecontent{
+    width: 95%; height: 180px; margin: auto; border-radius: 5px; display: flex; justify-content: space-around; align-items: center; 
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+#firstbox{
+    width: 60%; height: 160px; margin: auto; border-radius: 5px;
+}
+#firstbox>h3{
+    color: #00b1cd; font-family: sans-serif;
+}
+#firstbox>h4>a{
+     font-family: sans-serif; text-decoration: none; color: black;
+}
+#firstbox>p{
+    font-size: 15px;
+}
+
+#secondbox{
+    width: 30%; height: 160px;  margin: auto; border-radius: 5px;
+}
+#secondbox>img{
+    width: 100%; border-radius: 5px;  
+}
+
+
+#advertisement{
+    width: 95%; height: auto; justify-content: center; align-items: center;
+}
+#adverimg{
+    width: 80%; height:auto;
+}
+#adverimg>img{
+    width: 100%; 
+}
+
+
+
+
+
+#third{
+     width: 30%; height: auto;  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+#cont>#first>h3{
+   text-align: center; 
+}
+#firstOne>h3{
+  text-align: center; font-family: sans-serif;
+}
+#latestnews_section{
+    padding-left: 10px; font-family: sans-serif;
+}
+#recommended_news{
+  padding-left: 10px; font-family: sans-serif;
+}
+hr+h3>a{
+  color: #00b1cd; text-decoration: none; font-family: sans-serif;
+}
+h4+p{
+    padding-left: 10px; font-weight: lighter; font-size: large; color: gray;  font-family: sans-serif;
+}
+
+
+#slash{
+    color: gray; padding-left: 5px;
+}
+#second>h2{
+    text-align:center; 
+}
+#second_one{
+   width: 90%; height:100px; margin: auto;  border-radius: 5px; 
+}
+
+#second_one>h3{
+  padding-left: 10px; color: #00b1cd;  font-family: sans-serif;
+}
+
+
+
+
+
+
+#third_one>p{
+   text-align: center; font-weight: lighter; font-size: large; color: gray;  font-family: sans-serif;
+}
+#thirdclone_one>p{
+  text-align: center; font-weight: lighter; font-size: large; color: gray; 
+}
+#third_one>img{
+  width: 100%;
+}
+#thirdclone_one>img{
+width: 100%; 
+}
+#third_two{
+   width:100%;  height: 300px; position:relative;
+}
+#third_two>h3{
+ text-align: center; 
+}
+#third_two>h4{
+   padding-left: 10px;  font-family: sans-serif;
+}
+#third_two>img{
+   width: 100%;
+}
+#fourdivs{
+  height: 100px; width: 100%;  align-items: center;display: flex; justify-content: space-evenly; align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+#twodiv{
+   width: 60%; height: 90px; padding-left: 10px; padding-bottom: 15px;  font-family: sans-serif;
+}
+#twodivs{
+   width: 30%; height: 90px;  font-family: sans-serif;
+}
+
+#twodivs>img{
+   width: 100%; height: 90px; border-radius: 5px;
+}
+
+#viewallOpt{
+    text-align: center; color: #00b1cd;
+}
+span{
+  color: #00b1cd;
+}
+#viewallOpt{
+   font-family: sans-serif;
+}
+#advertisement{
+width: 90%; height: 450px; margin: auto; background-color: #e5e5e5;;
+ display: flex; justify-content: center;
+   align-items: center;
+}
+#firstadvertisement{
+    width: 60%; height: 350px;
+}
+#firstadvertisement>p{
+  font-weight: lighter; font-size: large; color: gray;  font-family: sans-serif; text-align: center; 
+}
+#firstadvertisement>img{
+   width: 100%;
+}
+
