@@ -1,5 +1,4 @@
 *{
-   
     margin: 0px;
     padding: 0px;
 
@@ -7,9 +6,8 @@
 #footerCon{
     width: 100%;
     height: auto;
-    /* margin-top: ; */
     /* border: 1px solid red; */
-    /* margin-top:-50px; */
+    /* margin-top:20px; */
     background-color: #011e29;
 }
 
